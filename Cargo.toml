@@ -1,0 +1,21 @@
+[package]
+name = "image_server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rand_core = { version = "0.6", features = ["getrandom"] }
+axum = { version = "0.7", features = ["multipart"] }
+tokio = { version = "1.0", features = ["full"] }
+tower-http = { version = "0.5", features = ["fs", "limit", "cors"] }
+uuid = { version = "1.0", features = ["v4", "fast-rng"] }
+sqlx = { version = "0.8", features  = ["sqlite", "runtime-tokio", "macros"] }
+argon2 = "0.5"
+serde = { version = "1.0", features = ["derive"] }
+sha2 = "0.10"
+infer = "0.19.0"
+hex = "0.4.3"
+reqwest = { version = "0.12", features = ["json"] }
+serde_json = "1.0.149"
+dotenvy = "0.15.7"
+base64 = "0.22.1"
