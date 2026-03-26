@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: (MIT OR Apache-2.0)
+// Copyright 2026 Christoffer Gräsbeck
+ 
 use crate::{AppState, auth::hash_token};
 use axum::{
     extract::{Multipart, Path, Query, State},
